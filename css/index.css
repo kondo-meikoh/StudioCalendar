@@ -1,0 +1,108 @@
+﻿@charset "utf-8";
+
+html {
+	color: #333;
+	font-family: "Kosugi Maru", serif;
+	font-weight: 400;
+	font-style: normal;
+	background: #fafafa;
+	font-size: clamp(1rem, calc(0.8rem + 1vw), 1.4rem);
+}
+/**/
+#bt {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 50px;
+	font-size: 0.75rem;
+	box-shadow: 0 -1px 6px rgba(0, 0, 0, .1);
+}
+#bt * {
+	border-top: solid 1px rgba(255, 255, 255, .4);
+	border-left: solid 1px rgba(255, 255, 255, .4);
+	border-right: solid 1px rgba(0, 0, 0, .2);
+	border-bottom: solid 1px rgba(0, 0, 0, .2);
+}
+#bt input[type="button"] {
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: #019ce5;
+	text-align: center;
+}
+#bt .disabled {
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 100%;
+	color: #f1f1f1;
+	background: #ccc;
+}
+#bt input[type="button"]:nth-child(2) {
+	color: #333;
+	background: #fff;
+}
+/**/
+#sakae,
+#aoi {
+	width: calc(100% - 32px);
+	max-width: 680px;
+	margin: 32px auto 0;
+}
+#aoi {
+	margin-bottom: 120px;
+}
+h1 {
+	color: #777;
+	font-size: 1.25rem;
+	text-align: left;
+}
+/**/
+.cal {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	margin: 8px 0 0 0;
+	font-size: 0.75rem;
+	border: solid 1px #ccc;
+	border-radius: 8px;
+}
+.cal li {
+	background: #fff;
+	padding: 16px 8px;
+	text-align: center;
+}
+.cal li.weekday {
+	padding: 8px;
+	background: #edf2fa;
+	border-bottom: solid 1px #eee;
+	font-size: 1rem;
+}
+.cal li.weekday:nth-child(1) {
+	border-radius: 8px 0 0 0;
+}
+.cal li.weekday:nth-child(8) {
+	border-radius: 0 8px 0 0;
+}
+.cal li.weekday i.text {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 0.5rem;
+	font-style: inherit;
+}
+.cal li.statenan {
+	color: #ccc;
+	background: #f1f1f1;
+}
+.cal li.stateok {
+	color: #1b6ef3;
+}
+.cal li:nth-last-child(8) {
+	border-radius: 0 0 0 8px;
+}
+.cal li:nth-last-child(1) {
+	border-radius: 0 0 8px 0;
+}
