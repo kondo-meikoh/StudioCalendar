@@ -87,6 +87,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\index.css" />
+    <Content Include="image\apple-touch-icon.png" />
+    <Content Include="image\favicon.ico" />
+    <Content Include="image\favicon.svg" />
+    <Content Include="image\icon-192.png" />
+    <Content Include="image\icon-512.png" />
     <Content Include="index.aspx" />
     <Content Include="js\index.js" />
     <Content Include="js\jquery-1.9.1.min.js" />
@@ -103,6 +109,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="calendartest-445006-70e93c8084a0.json" />
+    <Content Include="manifest.webmanifest" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
