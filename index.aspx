@@ -54,7 +54,7 @@
             <h1>栄スタジオ</h1>
             <ul class="cal">
                 <% DateTime date = DateTime.Today.AddDays(add_week * 7);%>
-                <li class="weekday"><%= date.Month %>月</li>
+                <li class="weekday"><span><%= date.Month %><i class="month">月</i></span></li>
                 <%
                     for(int i = 0; i < 7; i++) {
                 %>
@@ -98,7 +98,7 @@
         <section id="aoi">
             <h1>葵スタジオ</h1>
             <ul class="cal">
-                <li class="weekday"><%= date.Month %>月</li>
+                <li class="weekday"><span><%= date.Month %><i class="month">月</i></span></li>
                 <%
                     for(int i = 0; i < 7; i++) {
                 %>
