@@ -43,7 +43,7 @@
             <span class="disabled">今週</span>
             <span class="disabled">前の週</span>
             <% } %>
-            <% if (add_week >= 5) { %>
+            <% if (add_week >= 4) { %>
             <span class="disabled">次の週</span>
             <% } else {%>
             <input type="button" id="next_week" value="次の週" />
@@ -53,9 +53,9 @@
         <section id="sakae">
             <h1>栄スタジオ</h1>
             <ul class="cal">
-                <li class="weekday"></li>
+                <% DateTime date = DateTime.Today.AddDays(add_week * 7);%>
+                <li class="weekday"><%= date.Month %>月</li>
                 <%
-                    DateTime date = DateTime.Today.AddDays(add_week * 7);
                     for(int i = 0; i < 7; i++) {
                 %>
                 <li class="weekday"><i class="text"><%= date.AddDays(i).ToString("ddd") %></i><%= date.AddDays(i).Day %></li>
@@ -98,7 +98,7 @@
         <section id="aoi">
             <h1>葵スタジオ</h1>
             <ul class="cal">
-                <li class="weekday"></li>
+                <li class="weekday"><%= date.Month %>月</li>
                 <%
                     for(int i = 0; i < 7; i++) {
                 %>
