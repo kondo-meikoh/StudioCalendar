@@ -46,6 +46,26 @@ html {
 	color: #333;
 	background: #fff;
 }
+@media screen and (min-width: 768px){
+#bt {
+	position: relative;
+    width: calc(100% - 32px);
+	max-width: 680px;
+	margin: 32px auto 0;
+	border-radius: 8px;
+	border: solid 1px #ccc;
+	overflow: hidden;
+}
+#bt * {
+	border: none;
+}
+#bt *:nth-child(1) {
+	border-radius: 8px 0 0 8px;
+}
+#bt *:nth-last-child(1) {
+	border-radius: 0 8px 8px 0;
+}
+}
 /**/
 #sakae,
 #aoi {
