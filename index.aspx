@@ -50,7 +50,7 @@
             <% } %>
         </div><%--bt--%>
 
-        <p class="disc">ご予約、お問い合わせは営業担当までご連絡ください。</p>
+        <p class="disc">ご予約、お問い合わせは担当営業までご連絡ください。</p>
 
         <section id="sakae">
             <div class="head">
