@@ -8,6 +8,22 @@ html {
 	background: #fafafa;
 	font-size: clamp(1rem, calc(0.8rem + 1vw), 1.4rem);
 }
+main {
+	width: calc(100% - 32px);
+	max-width: 680px;
+	margin: 32px auto 0;
+}
+h1 {
+	color: #777;
+	font-size: 1.25rem;
+	text-align: left;
+}
+p.disc {
+	margin-top: 4px;
+	font-size: 0.7rem;
+	color: #999;
+}
+
 /**/
 #bt {
 	position: fixed;
@@ -49,8 +65,6 @@ html {
 @media screen and (min-width: 768px){
 #bt {
 	position: relative;
-    width: calc(100% - 32px);
-	max-width: 680px;
 	margin: 32px auto 0;
 	border-radius: 8px;
 	border: solid 1px #ccc;
@@ -65,21 +79,37 @@ html {
 #bt *:nth-last-child(1) {
 	border-radius: 0 8px 8px 0;
 }
+#bt + * {
+	margin-top: 32px;
+}
 }
 /**/
 #sakae,
 #aoi {
-	width: calc(100% - 32px);
-	max-width: 680px;
 	margin: 32px auto 0;
 }
 #aoi {
 	margin-bottom: 120px;
 }
-h1 {
-	color: #777;
-	font-size: 1.25rem;
-	text-align: left;
+.head {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	justify-content: space-between;
+}
+.head a .icon_map {
+	width: 40px;
+	height: 40px;
+}
+.head a .icon_map + i {
+	color: #019ce5;
+	font-style: normal;
+}
+@media screen and (min-width: 768px){
+.head a .icon_map {
+	width: 48px;
+	height: 48px;
+}
 }
 /**/
 .cal {
@@ -129,7 +159,7 @@ h1 {
 	background: #f1f1f1;
 }
 .cal li.stateok {
-	color: #1b6ef3;
+	color: #4cc97a;
 }
 .cal li:nth-last-child(8) {
 	border-radius: 0 0 0 8px;

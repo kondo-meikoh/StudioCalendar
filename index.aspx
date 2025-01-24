@@ -50,8 +50,29 @@
             <% } %>
         </div><%--bt--%>
 
+        <p class="disc">ご予約、お問い合わせは営業担当までご連絡ください。</p>
+
         <section id="sakae">
-            <h1>栄スタジオ</h1>
+            <div class="head">
+                <div class="name">
+                    <h1>栄スタジオ</h1>
+                    <p class="disc">名古屋市中区栄3-20-9 佳陽ビル 4F</p>
+                </div>
+                <a href="https://x.gd/TOiC1">
+                    <svg class="icon_map" viewBox="0 0 64 64">
+                        <title>GooglaMapを開く</title>
+                        <path style="fill:#fff;" d="M24.67 44.83 39.84 60h11.08L30.23 39.3l-5.56 5.53z"/>
+                        <path d="M9.82 59.69c.7.2 1.43.31 2.18.31h27.84L24.67 44.83 9.81 59.69Z" style="fill:#4a9bf6;"/>
+                        <path d="M54.13 4.3C53.45 4.11 52.74 4 52 4H12c-4.42 0-8 3.58-8 8v40c0 .74.11 1.45.3 2.13L54.13 4.3Z" style="fill:#28be77;"/>
+                        <path d="M30.23 39.3 50.93 60h1.08c4.42 0 8-3.58 8-8V12c0-.76-.11-1.49-.31-2.18L30.24 39.31Z" style="fill:#d3d9f2;"/>
+                        <path d="M59.69 9.82a8.008 8.008 0 0 0-5.56-5.52L4.3 54.13a7.99 7.99 0 0 0 5.52 5.56L59.69 9.82Z" style="fill:#ffdf64;"/>
+                        <path d="M24.67 44.83 39.84 60h11.08l-20.7-20.7-5.55 5.53Z" style="fill:#fff;"/>
+                        <path d="M54.49 20.92c0 7.54-7.7 15.31-12.9 20.51-5.2-5.16-12.9-12.79-12.9-20.51 0-7.12 5.79-12.65 12.9-12.65s12.9 5.53 12.9 12.65Z" style="fill:#d73d3f;"/>
+                        <path d="M41.59 26.77c3.09 0 5.6-2.51 5.6-5.6s-2.51-5.6-5.6-5.6-5.6 2.51-5.6 5.6 2.51 5.6 5.6 5.6Z" style="fill:#a83229;"/>
+                    </svg>
+                </a>
+            </div><%--head--%>
+
             <ul class="cal">
                 <% DateTime date = DateTime.Today.AddDays(add_week * 7);%>
                 <li class="weekday"><span><%= date.Month %><i class="month">月</i></span></li>
@@ -96,7 +117,26 @@
         </section><%--sakae--%>
 
         <section id="aoi">
-            <h1>葵スタジオ</h1>
+            <div class="head">
+                <div class="name">
+                    <h1>葵スタジオ</h1>
+                    <p class="disc">名古屋市東区葵1-19-4 サッサウエスタンビル 4F</p>
+                </div>
+                <a href="https://goo.gl/maps/Yo1qjGr1JCF2">
+                    <svg class="icon_map" viewBox="0 0 64 64">
+                        <title>GooglaMapを開く</title>
+                        <path style="fill:#fff;" d="M24.67 44.83 39.84 60h11.08L30.23 39.3l-5.56 5.53z"/>
+                        <path d="M9.82 59.69c.7.2 1.43.31 2.18.31h27.84L24.67 44.83 9.81 59.69Z" style="fill:#4a9bf6;"/>
+                        <path d="M54.13 4.3C53.45 4.11 52.74 4 52 4H12c-4.42 0-8 3.58-8 8v40c0 .74.11 1.45.3 2.13L54.13 4.3Z" style="fill:#28be77;"/>
+                        <path d="M30.23 39.3 50.93 60h1.08c4.42 0 8-3.58 8-8V12c0-.76-.11-1.49-.31-2.18L30.24 39.31Z" style="fill:#d3d9f2;"/>
+                        <path d="M59.69 9.82a8.008 8.008 0 0 0-5.56-5.52L4.3 54.13a7.99 7.99 0 0 0 5.52 5.56L59.69 9.82Z" style="fill:#ffdf64;"/>
+                        <path d="M24.67 44.83 39.84 60h11.08l-20.7-20.7-5.55 5.53Z" style="fill:#fff;"/>
+                        <path d="M54.49 20.92c0 7.54-7.7 15.31-12.9 20.51-5.2-5.16-12.9-12.79-12.9-20.51 0-7.12 5.79-12.65 12.9-12.65s12.9 5.53 12.9 12.65Z" style="fill:#d73d3f;"/>
+                        <path d="M41.59 26.77c3.09 0 5.6-2.51 5.6-5.6s-2.51-5.6-5.6-5.6-5.6 2.51-5.6 5.6 2.51 5.6 5.6 5.6Z" style="fill:#a83229;"/>
+                    </svg>
+                </a>
+            </div><%--head--%>
+
             <ul class="cal">
                 <li class="weekday"><span><%= date.Month %><i class="month">月</i></span></li>
                 <%
